@@ -402,7 +402,14 @@
 			<!-- /header -->
 			<!-- Content    -->
 			<div data-role="content" >
-			    <a href="#barcode" data-role="button" data-transition="slide" class="barcode-link">Open Barcode Scanner</a>
+			 
+			    
+			        <div class="app">
+           
+           
+            <p><a href="#" class="topcoat-button" id="scan">SCAN</a></p>
+           
+        </div>
              <div class="today-events">
              	
              	<div class="eveniment">
@@ -562,28 +569,7 @@
 			<!-- /footer -->
 		</div>
 		<!-- /page -->
-		  <div data-role="page" id="barcode"  data-theme="c">
-		        <div class="app">
-           
-           
-            <p><a href="#" class="topcoat-button" id="scan">SCAN</a></p>
-           
-        </div>
-          
-            <!-- Header -->
-            
-            <!-- /header -->
-            <!-- Content    -->
-            <div data-role="content">
-                
-                
-                
-            </div>
-            <!-- /content -->
-            <!-- footer -->
-            
-            <!-- /footer -->
-        </div>
+	
 
 	
 		
@@ -615,6 +601,8 @@ var panel=menu_init();
 		    alert('link');
 		    window.location='#barcode';
 		});
+		   app.initialize2();
+       
 		
 		$('.catli').on('click',function()
 		{
@@ -674,8 +662,7 @@ var panel=menu_init();
     $('#barcode').on('pageinit', function () {
         
      
-        app.initialize2();
-       
+     
        
       
       
