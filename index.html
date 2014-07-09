@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<title>&nbsp;</title>
 	<head>
@@ -402,7 +402,7 @@
 			<!-- /header -->
 			<!-- Content    -->
 			<div data-role="content" >
-			    <a href='#barcode'>Open Barcode Scanner</a>
+			    <a href="#barcode" class="menu" data-transition="slide">Open Barcode Scanner</a>
              <div class="today-events">
              	
              	<div class="eveniment">
@@ -574,9 +574,9 @@
             
             <!-- /header -->
             <!-- Content    -->
-            <div data-role="content" id="content-map" class="location-content">
+            <div data-role="content">
                 
-                <div id="map-canvas"></div>
+                
                 
             </div>
             <!-- /content -->
@@ -611,6 +611,7 @@ var panel=menu_init();
 	});
 	$('#acasa').on('pageinit',function(){
 		navbar(this);
+		
 		$('.catli').on('click',function()
 		{
 			$('.subcats').hide();
