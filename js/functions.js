@@ -35,7 +35,7 @@ function populate_categorie(id,id2){//id-supercategoria,id2-categoria
 	$.blockUI({ message: '<img src="http://brasovtour.com/mobile-app/img/busy.gif" />' });
         $.ajax({
             type: 'POST',
-            url: "http://brasovtour.com/mobile-app/ajax/ajax.php",
+            url: "http://www.brasovtour.com/mobile-app/ajax/ajax.php",
    		    dataType: "json",
             data:  string,
             success:function(response){
@@ -75,7 +75,7 @@ function validate_login(){
 		$.blockUI({ message: '<img src="http://brasovtour.com/mobile-app/img/busy.gif" />' });
         $.ajax({
 	            type: 'POST',
-	            url: "http://brasovtour.com/mobile-app/ajax/ajax.php",
+	            url: "http://www.brasovtour.com/mobile-app/ajax/ajax.php",
 	   		    dataType: "json",
 	            data:  string,
 	            success:function(response){
@@ -125,7 +125,7 @@ function setLocationId(id){
 
 		          
 		string="location_id="+id;
-		$.blockUI({ message: '<img src="http://brasovtour.com/mobile-app/img/busy.gif" />' });
+		$.blockUI({ message: '<img src="http://www.brasovtour.com/mobile-app/img/busy.gif" />' });
         $.ajax({
 		            type: 'POST',
 		            url: "http://brasovtour.com/mobile-app/ajax/ajax.php",
