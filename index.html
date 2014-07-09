@@ -402,7 +402,7 @@
 			<!-- /header -->
 			<!-- Content    -->
 			<div data-role="content" >
-			    <a href="#barcode" class="menu" data-transition="slide">Open Barcode Scanner</a>
+			    <a href="#barcode" data-role="button" data-transition="slide" class="barcode-link">Open Barcode Scanner</a>
              <div class="today-events">
              	
              	<div class="eveniment">
@@ -611,6 +611,10 @@ var panel=menu_init();
 	});
 	$('#acasa').on('pageinit',function(){
 		navbar(this);
+		$('.barcode-link').on('click',function(){
+		    alert('link');
+		    window.location='#barcode';
+		});
 		
 		$('.catli').on('click',function()
 		{
@@ -668,6 +672,7 @@ var panel=menu_init();
 		  
     });
     $('#barcode').on('pageinit', function () {
+        
      
         app.initialize2();
        
