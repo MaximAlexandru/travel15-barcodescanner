@@ -11,7 +11,7 @@ function menu_init(){
 			string="header_request="+$what;		
 		    $.ajax({
             type: 'POST',
-            url: "http://brasovtour.com/mobile-app/ajax/ajax.php",
+            url: "http://www.brasovtour.com/mobile-app/ajax/ajax.php",
             data:  string,
             success:function(response){
             	menu=response;
